@@ -23,6 +23,7 @@ SMODS.Joker { --blue_java
     perishable_compat = true,
     blueprint_compat = true,
     eternal_compat = true,
+    pools = { Food = true },
     -- Which atlas key to pull from.
     atlas = 'T.Jokers',
     -- This card's position on the atlas, starting at {x=0,y=0} for the very top left.
@@ -60,6 +61,7 @@ SMODS.Joker { --mint
   eternal_compat = false,
   blueprint_compat = false,
   perishable_compat = true,
+  pools = { Food = true },
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.money, card.ability.extra.money_decrease } }
   end,
@@ -492,6 +494,7 @@ SMODS.Joker { --pineapple
   eternal_compat = false,
   perishable_compat = true,
   blueprint_compat = true,
+  pools = { Food = true },
   atlas = "T.Jokers",
   pos = { x = 1, y = 2 },
   config = { extra =  { chips = 160, chips_mod = 40 } },
@@ -556,6 +559,7 @@ SMODS.Joker { --pie
   eternal_compat = false,
   perishable_compat = true,
   blueprint_compat = true,
+  pools = { Food = true },
   config = { extra =  { mult = 24, mult_mod = 6 } },
   loc_vars = function(self, info_queue, card)
     return { vars = { card.ability.extra.mult, card.ability.extra.mult_mod } }
